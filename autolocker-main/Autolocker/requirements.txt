@@ -1,0 +1,29 @@
+# Telegram
+aiogram==3.18.0
+
+# iCloud
+icloudpy==0.8.0
+
+# Browser automation
+playwright==1.57.0
+
+# Supabase (оставляем только high-level SDK, без лишних зависимостей)
+supabase==2.13.0
+
+# HTTP async (используется в DB layer и внешних API)
+aiohttp==3.11.13
+httpx==0.27.2
+
+# Config / validation
+python-dotenv==1.0.1
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# Logging
+loguru==0.7.3
+
+# Async utils (asyncpg оставляем только если реально используешь PostgreSQL напрямую)
+asyncpg==0.30.0
+
+# IMPORTANT: фиксы стабильности для Python 3.11 + Playwright
+typing_extensions>=4.10.0
